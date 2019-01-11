@@ -1,0 +1,74 @@
+.lds-grid {
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+.lds-grid div {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #ffffff;
+    animation: lds-grid 1.2s linear infinite;
+}
+.lds-grid div:nth-child(1) {
+    top: 6px;
+    left: 6px;
+    animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+    top: 6px;
+    left: 26px;
+    animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+    top: 6px;
+    left: 45px;
+    animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+    top: 26px;
+    left: 6px;
+    animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+    top: 26px;
+    left: 26px;
+    animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+    top: 26px;
+    left: 45px;
+    animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+    top: 45px;
+    left: 6px;
+    animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+    top: 45px;
+    left: 26px;
+    animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+    top: 45px;
+    left: 45px;
+    animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+#loader {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
